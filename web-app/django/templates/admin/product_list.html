@@ -1,0 +1,15 @@
+<h1>Product List</h1>
+{% if message %}
+    <p>{{ message }}</p>
+{% else %}
+    <ul>
+        {% for product in products %}
+            <li>
+                <h3>Product Name: {{ product.name }}</h3>
+                <h3>Product Category: {{ product.category_slug }}</h3>
+                <h3>Product Price: {{ product.price }}</h3>
+            </li>
+        ------------------------------------------------------------------
+        {% endfor %}
+    </ul>
+{% endif %}

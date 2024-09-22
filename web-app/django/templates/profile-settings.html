@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Profile Page</h1>
+        {% for user in users %}
+        <h3>Username : {{user.username}}</h3>
+        <h3>Phone Number : {{user.phone_number}}</h3>
+        {% endfor %}
+</body>
+</html>
